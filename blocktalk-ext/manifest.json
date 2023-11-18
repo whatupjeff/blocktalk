@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Chatify",
+  "name": "BlockTalk",
   "version": "1.0",
-  "description": "An extension for global chat on any sites",
+  "description": "Your gateway to the world on any website",
   "permissions": ["activeTab", "storage"],
   
   "action": {
