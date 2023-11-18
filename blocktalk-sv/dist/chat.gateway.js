@@ -130,7 +130,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], ChatGateway.prototype, "handleChatToRoom", null);
 ChatGateway = __decorate([
-    (0, websockets_1.WebSocketGateway)({ cors: { origin: ['process.env.PORT', 'chrome-extension://kmopocmfjmaliamijoghgccbfhpbghpa'], credentials: true } })
+    (0, websockets_1.WebSocketGateway)({ cors: { origin: ['process.env.PORT', 'chrome-extension://kfomokbdjlombkhjmgjheceikfekfjkg'], credentials: true } })
 ], ChatGateway);
 exports.ChatGateway = ChatGateway;
 //# sourceMappingURL=chat.gateway.js.map

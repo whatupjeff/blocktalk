@@ -2,7 +2,7 @@ import { SubscribeMessage, WebSocketGateway, OnGatewayConnection, WebSocketServe
 import { Server, Socket } from 'socket.io';
 import { Logger } from '@nestjs/common';
 
-@WebSocketGateway({ cors: { origin: ['process.env.PORT', 'chrome-extension://kmopocmfjmaliamijoghgccbfhpbghpa'], credentials: true } })
+@WebSocketGateway({ cors: { origin: ['process.env.PORT', 'chrome-extension://kfomokbdjlombkhjmgjheceikfekfjkg'], credentials: true } })
 export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   @WebSocketServer()
   server: Server;

@@ -179,10 +179,14 @@ async function connectToWallet() {
   }
 
   // Initialize WalletConnectProvider
-  const provider = new WalletConnectProvider.default({
-      infuraId: "https://mainnet.infura.io/v3/5915d9e9b91f4168b5e2ee4d09915145" // Replace with your Infura Project ID
-  });
+  console.log("Connecting to walletconnect provider...")
+  // const provider = new WalletConnectProvider.WS_URL("wss://goerli.ethereum.validationcloud.io/v1/wss/ClfGaeGeh3nAksIFB8j2iz6FvRSgIAYnX8iZcHKRGEM")
+  const provider = new WalletConnectProvider.connectWebSocket({})
+  // const provider = new WalletConnectProvider.default({
+      // infuraId: "https://mainnet.infura.io/v3/5915d9e9b91f4168b5e2ee4d09915145" // Replace with your Infura Project ID
 
+  // });
+  console.log("line 188...")
   // Start wallet connection
   try {
       await provider.enable();
