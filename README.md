@@ -18,4 +18,13 @@ Powered by IPFS, WalletConnect, Lens, Waku, and the EVM
 1. yarn init
 2. yarn add --dev hardhat
 3. npx hardhat init
+4. npx hardhat compile
+5. npx hardhat run --network goerli contract-scripts/deploy.js
 
+npx hardhat run --network arbitrum-goerli contract-scripts/deploy.js
+###to Verify the Contract:
+npx hardhat --network goerli verify --contract "contracts/<token>.sol:<token>" <deploy addr> "<TOKEN CONTRACT NAME>" "<TOKEN NAME>"
+npx hardhat help
+npx hardhat test
+
+npx hardhat --network arbitrum-goerli verify --contract "contracts/BlockTalk.sol:BlockTalk" 0x91f37d859A608419B665AbA41Fc397B18F1468A6

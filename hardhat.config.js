@@ -15,7 +15,11 @@ module.exports = {
     },
     'scroll-sepolia': {
       url: process.env.SCROLL_SEP_TESTNET,
-      accounts: [process.env.PRIVATE_KEY]
+      accounts: [process.env.PRIVATE_KEY],
+      apiURL: "https://api-sepolia.scrollscan.com/api",
+      browserURL: 'https://sepolia.scrollscan.com',
+      apiKey: { "scroll-sepolia": process.env.SCROLLSCAN_API_KEY }
+
     },    
     'arbitrum-goerli': {
       url: process.env.ARB_GOERLI,
@@ -31,48 +35,55 @@ module.exports = {
     },
   },
   'etherscan': {
-    apiKey: process.env.ETHERSCAN_API_KEY
-  },
-  'linea': {
-    apiKey: process.env.ETHERSCAN_API_KEY
+    apiKey: { "scroll-sepolia": process.env.SCROLLSCAN_API_KEY }
   },
   customChains: [
-    // {
-    //   network: "base-goerli",
-    //   chainId: 84531,
-    //   urls: {
-    //    apiURL: "https://api-goerli.basescan.org/api",
-    //    browserURL: "https://goerli.basescan.org"
-    //   }
-    // },
-    // {
-    //   network: 'scroll-sepolia',
-    //   chainId: 534351,
-    //   urls: {
-    //     // apiURL: 'https://sepolia-blockscout.scroll.io/api',
-    //     apiURL: "https://sepolia-rpc.scroll.io",
-    //     browserURL: 'https://sepolia-blockscout.scroll.io',
-    //   },
-      
-    // },
     {
-      network: 'polyzkevm-tnet',
-      chainId: 1442,
+      network: "scroll-sepolia",
       urls: {
-        apiURL: "https://rpc.public.zkevm-test.net",
-        browserURL: 'https://zkevm.polygonscan.com',
-      },
-    },
-    {
-      network: 'arbitrum-goerli',
-      chainId: 421613,
-      urls: {
-        apiURL: "https://goerli-rollup.arbitrum.io/rpc",
-        browserURL: 'https://goerli.arbiscan.io',
-      },
-    },
-    
-    
+        apiURL: "https://api-sepolia.scrollscan.com/api",
+        browserURL: 'https://sepolia.scrollscan.com',
+      }
+    }
   ]
+  // customChains: [
+  //   // {
+  //   //   network: "base-goerli",
+  //   //   chainId: 84531,
+  //   //   urls: {
+  //   //    apiURL: "https://api-goerli.basescan.org/api",
+  //   //    browserURL: "https://goerli.basescan.org"
+  //   //   }
+  //   // },
+  //   {
+  //     network: 'scroll-sepolia',
+  //     chainId: 534351,
+  //     urls: {
+  //       // apiURL: 'https://sepolia-blockscout.scroll.io/api',
+  //       apiURL: "https://sepolia-rpc.scroll.io",
+  //       browserURL: 'https://sepolia-blockscout.scroll.io',
+  //     },
+      
+  //   // },
+    
+  //   // {
+  //     network: 'polyzkevm-tnet',
+  //     chainId: 1442,
+  //     urls: {
+  //       apiURL: "https://rpc.public.zkevm-test.net",
+  //       browserURL: 'https://zkevm.polygonscan.com',
+  //     },
+  //   },
+  //   {
+  //     network: 'arbitrum-goerli',
+  //     chainId: 421613,
+  //     urls: {
+  //       apiURL: "https://goerli-rollup.arbitrum.io/rpc",
+  //       browserURL: 'https://goerli.arbiscan.io',
+  //     },
+  //   },
+    
+    
+  // ]
 
 };
