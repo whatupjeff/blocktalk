@@ -13,3 +13,9 @@ Powered by IPFS, WalletConnect, Lens, Waku, and the EVM
 2. cd blocktalk-sv
 3. npm install
 4. npm run start:dev
+
+## Hardhat Setup (only for deployer)
+1. yarn init
+2. yarn add --dev hardhat
+3. npx hardhat init
+

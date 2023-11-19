@@ -1,0 +1,12 @@
+{
+  "name": "blocktalk",
+  "version": "1.0.0",
+  "description": "Censorship-resistant chat rooms linked to websites",
+  "main": "index.js",
+  "repository": "https://github.com/whatupjeff/blocktalk.git/",
+  "author": "Dan <dkazenoff@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.19.1"
+  }
+}
