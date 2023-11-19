@@ -6,8 +6,8 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
 contract BlockTalk is ERC721Upgradeable, OwnableUpgradeable {
     uint256 public constant MAX_SUPPLY = 20000;
-    uint256 public mintPrice = 0.005 ether;
-    uint256 public transferFee = 0.001 ether;  // Minimal transfer fee
+    uint256 public mintPrice = 0.00000005 ether;
+    uint256 public transferFee = 0.00000001 ether;  // Minimal transfer fee
     address payable public feeRecipient;  // Address to receive the transfer fees
     uint256 public totalSupply;
 
